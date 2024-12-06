@@ -5,15 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sassly HTML5 Template">
+  <meta name="description" content="">
 
-  <title>Sassly About</title>
+  <title>PayBox</title>
 
   <!-- Fav Icon -->
   <link rel="icon" type="image/x-icon" href="../assets/imgs/logo/favicon.webp">
-
-
-
 
 
   <!-- All CSS files -->
@@ -25,32 +22,47 @@
   <link rel="stylesheet" href="assets/css/magnific-popup.css">
   <link rel="stylesheet" href="assets/css/master-about.css">
 
+  <style>
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+      font-family: "tropiline", sans-serif !important;
+    }
+  </style>
+
+  <style>
+   
+    .paybox {
+      margin-top: 6px;
+      display: flex;
+    }
+
+    .paybox-light {
+      margin-top: 6px;
+      display: flex;
+      color: #fff;
+    }
+
+  
+    .links-text{
+      ul{
+        li{
+          a:hover{
+            color: #fff !important;
+          }
+        }
+      }
+    }
+    
+  </style>
 
 </head>
 
 
+
+
 <body class="font-heading-colasta-bold">
 
-  <!-- Preloader -->
-  <div id="preloader">
-    <div id="container" class="container-preloader">
-      <div class="animation-preloader">
-        <div class="spinner"></div>
-        <div class="txt-loading">
-          <span data-text="B" class="characters">B</span>
-          <span data-text="I" class="characters">I</span>
-          <span data-text="N" class="characters">N</span>
-          <span data-text="O" class="characters">O</span>
-          <span data-text="X" class="characters">X</span>
-        </div>
-      </div>
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
-    </div>
-  </div>
+  
 
-  <!-- Cursor Animation -->
-  <div class="cursor1"></div>
 
   <!-- Sroll to top -->
   <div class="progress-wrap">
@@ -59,126 +71,38 @@
     </svg>
   </div>
 
-  <!-- Switcher Area Start -->
-  <div class="switcher__area">
-    <div class="switcher__icon">
-      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
-      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <div class="switcher__items">
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <p class="switcher__title">Language Support</p>
-        </div>
-        <div class="switcher__btn lang_dir wc-col-2">
-          <button class="active" data-mode="ltr">LTR</button>
-          <button data-mode="rtl">RTL</button>
-        </div>
-      </div>
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <p class="switcher__title">Layout</p>
-        </div>
-        <div class="switcher__btn layout-type wc-col-2">
-          <button class="active" data-mode="full-width">Full Width</button>
-          <button data-mode="box-layout">Box Layout</button>
-        </div>
-      </div>
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <p class="switcher__title">Cursor</p>
-        </div>
-        <div class="switcher__btn">
-          <select name="cursor-style" id="cursor_style">
-            <option value="1">default</option>
-            <option selected value="2">animated</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Switcher Area End -->
-
   <!-- offcanvas start  -->
   <div class="offcanvas-area">
     <div class="offcanvas-area-meta-wrapper">
       <span id="close_offcanvas" class="close-offcanvas">
         <img src="assets/imgs/icon/close.png" alt="close">
       </span>
-      <div class="offcanvas-btn-wrapper">
-        <a target="_blank" href="https://themeforest.net/item/axtra-digital-agency-creative-portfolio-theme/43074408"
-          class="wc-btn wc-btn-default btn-hover-cropping">Purchase now</a>
-      </div>
+     
     </div>
     <div class="offcanvas-area-menu-wrapper">
       <ul id="accordion" class="accordion">
+        <li><a href="crm.html">Home</a></li>
         <li>
-          <div class="link">Home <img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
-          </div>
+          <div class="link">Products<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image"></div>
           <ul class="submenu">
-            <li><a href="ai-content-writer.html">AI Content Writer</a></li>
-            <li><a href="ai-image-generator.html">AI Image Generator</a></li>
-            <li><a href="ai-chatbot.html">AI Chatbot</a></li>
-            <li><a href="ai-seo.html">AI SEO Software</a></li>
-            <li><a href="ai-software.html">AI Startups</a></li>
-            <li><a href="ai-video-editor.html">AI Video Editor</a></li>
-            <li><a href="booking.html">Booking Software</a></li>
-            <li><a href="online-meeting.html">Virtual Meeting</a></li>
-            <li><a href="crm.html">CRM Software</a></li>
-            <li><a href="customer-service.html">Customer Support</a></li>
-            <li><a href="mobile-apps.html">Mobile App / SASS</a></li>
-            <li><a href="marketing-automation.html">Marketing automation</a></li>
+            <li><a href="x-bc.html">BeeduConnect</a></li>
+            <li><a href="x-bc.html">Society.IO</a></li>
+            <li><a href="x-pc-features.html">ProCollect</a></li>
+            <li style="opacity: 0.75; padding: 10px 0;">LearnShine</li>
+            <li  style="opacity: 0.75; padding: 10px 0;">SmartPos</li>
+            <li  style="opacity: 0.75; padding: 10px 0;">OnTheGo</li>
           </ul>
         </li>
-        <li>
         <li><a href="about.html">About</a></li>
-        <li>
-          <div class="link">Pages<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image"></div>
-          <ul class="submenu">
-            <li><a href="integration.html">integration</a></li>
-            <li><a href="integration-single.html">integration single</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact</a></li>
-            <li><a href="404.html">404</a></li>
-            <li><a href="pricing.html">pricing</a></li>
-            <li><a href="faq.html">faq</a></li>
-            <li><a href="all-template.html">video templete</a></li>
-            <li><a href="team.html">team page</a></li>
-            <li><a href="privacy-policy.html">privacy policy</a></li>
-          </ul>
-        </li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="faq.html">FaQ</a></li>
-        <li>
-          <div class="link">Blog<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image"></div>
-          <ul class="submenu">
-            <li><a href="blog.html">Our Blog</a></li>
-            <li><a href="blog-details.html">Blog Details</a></li>
-          </ul>
-        </li>
+        <li><a href="pricing.html">Contact</a></li>
+      
       </ul>
     </div>
   </div>
   <!-- offcanvas end  -->
 
 
-  <!-- search modal start -->
-  <div class="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="search-template" aria-hidden="true">
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body">
-          <form action="#" class="form-search">
-            <input type="text" placeholder="Search">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- search modal end -->
+
 
   <!-- Header area start -->
   <header class="header-area style-1 pos-abs zi-9">
@@ -186,60 +110,38 @@
       <div class="header-area__inner">
         <div class="header__logo">
           <a href="index.html">
-            <img src="assets/imgs/logo/logo.webp" class="normal-logo" alt="Site Logo">
-            <img src="assets/imgs/logo/logo-13.webp" class="sticky-logo" alt="Site Logo">
+            <h4 class="paybox">
+              <span class="l1">Pay</span>
+              <span class="l2">Box</span>
+            </h4>
           </a>
         </div>
         <div class="header__nav pos-center">
           <nav class="main-menu">
             <ul>
-              <li class="menu-item-has-children"><a href="index.html">home</a>
+              <li class="">
+                <a href="crm.html">Home</a>
+              </li>
+              <li class="">
+                <a href="javascript:void(0)">Products</a>
                 <ul class="dp-menu">
-                  <li><a href="ai-content-writer.html">AI Content Writer</a></li>
-                  <li><a href="ai-image-generator.html">AI Image Generator</a></li>
-                  <li><a href="ai-chatbot.html">AI Chatbot</a></li>
-                  <li><a href="ai-seo.html">AI SEO Software</a></li>
-                  <li><a href="ai-software.html">AI Startups</a></li>
-                  <li><a href="ai-video-editor.html">AI Video Editor</a></li>
-                  <li><a href="booking.html">Booking Software</a></li>
-                  <li><a href="online-meeting.html">Virtual Meeting</a></li>
-                  <li><a href="crm.html">CRM Software</a></li>
-                  <li><a href="customer-service.html">Customer Support</a></li>
-                  <li><a href="mobile-apps.html">Mobile App / SASS</a></li>
-                  <li><a href="marketing-automation.html">Marketing automation</a></li>
+                  <li><a href="x-bc.html">BeeduConnect</a></li>
+                  <li><a href="x-bc.html">Society.IO</a></li>
+                  <li><a href="x-pc-features.html">ProCollect</a></li>
+                  <li  style="opacity: 0.75; padding: 10px 25px;">LearnShine</li>
+                  <li  style="opacity: 0.75; padding: 10px 25px;">SmartPos</li>
+                  <li  style="opacity: 0.75; padding: 10px 25px;">OnTheGo</li>
                 </ul>
               </li>
-              <li><a href="about.html">about</a></li>
-              <li class="menu-item-has-children">
-                <a href="#">Pages</a>
-                <ul class="dp-menu">
-                  <li><a href="integration.html">integration</a></li>
-                  <li><a href="integration-single.html">integration single</a></li>
-                  <li><a href="about.html">about</a></li>
-                  <li><a href="contact.html">contact</a></li>
-                  <li><a href="404.html">404</a></li>
-                  <li><a href="pricing.html">pricing</a></li>
-                  <li><a href="faq.html">faq</a></li>
-                  <li><a href="all-template.html">video templete</a></li>
-                  <li><a href="team.html">team page</a></li>
-                  <li><a href="privacy-policy.html">privacy policy</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">blog</a>
-                <ul class="dp-menu">
-                  <li><a href="blog.html">blog</a></li>
-                  <li><a href="blog-details.html">blog details</a></li>
-                </ul>
-              </li>
+              <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
         </div>
         <div class="header__button">
           <a href="javascript:void(0)" class="wc-btn wc-btn-primary btn-text-flip" data-bs-toggle="modal"
-            data-bs-target="#signupform"> <span data-text="Sign up">Sign
-              up</span></a>
+            data-bs-target="#signupform"> <span data-text="Let's Talk">Let's Talk
+              </span></a>
         </div>
         <div class="header__navicon d-xl-none">
           <button onclick="showCanvas3()" class="open-offcanvas">
@@ -268,19 +170,13 @@
               <div class="intro-inner">
                 <div class="intro-top">
                   <div class="intro-title-wrapper">
-                    <h2 class="intro-title has_fade_anim">Sassly is here to help you launch your project!</h2>
+                    <h2 class="intro-title has_fade_anim">Elevate Your Business with Paybox</h2>
                   </div>
                   <div class="intro-para has_fade_anim" data-delay="0.30">
                     <div class="text-wrapper">
-                      <p class="text">Everything you need to dominate app service fortified the industry's #1 rated our
-                        customer support.</p>
+                      <p class="text">We provide cutting-edge payment related products to meet the evolving needs of businesses. Streamline customer experiences, and stay ahead in the fast-paced world of commerce with our innovative solutions.</p>
                     </div>
-                    <div class="thumbs thumbs-clip">
-                      <img src="assets/imgs/client/img-s-2.webp" alt="">
-                      <img src="assets/imgs/client/img-s-3.webp" alt="">
-                      <img src="assets/imgs/client/img-s-4.webp" alt="">
-                      <img src="assets/imgs/client/img-add-5.webp" alt="">
-                    </div>
+                    
                   </div>
                 </div>
                 <div class="intro-gallary has_fade_anim" data-delay="0.45">
@@ -299,34 +195,20 @@
               <img src="assets/imgs/shape/shape-r-35.webp" data-speed="0.8" alt="shape-1">
             </div>
             <div class="container">
-              <div class="about-inner">
-                <div class="about-video-wrap">
-                  <a href="assets/video/video.mp4" class="video-thumb video-popup">
-                    <img src="assets/imgs/shape/shape-r-21.webp" alt="video-icon">
-                    <img src="assets/imgs/icon/icon-r-33.webp" class="play-icon" alt="video-icon">
-                  </a>
-                  <img src="assets/imgs/gallery/img-r-35.webp" class="thumb-icon" alt="image">
-                </div>
+              <div class="about-inner" style="display: flex;">
+               
                 <div class="about-content">
                   <div class="logo-wrap">
                     <img src="assets/imgs/icon/icon-s-36.webp" alt="icon">
                     <div class="logo">
-                      <span class="subtitle has_fade_anim">Sassly Apps</span>
+                      <span class="subtitle has_fade_anim">Paybox</span>
                     </div>
                   </div>
-                  <h2 class="title-2 has_fade_anim">Over <span>150,0000 client</span></h2>
-                  <h2 class="section-title has_fade_anim">We created over <span>27,000+</span> stunning
+                  <h2 class="title-2 has_fade_anim">Over <span>50+ client</span></h2>
+                  <h2 class="section-title has_fade_anim">We created over <span>20+</span> stunning
                     and quality product over last 5 years with satisfaction.</h2>
                 </div>
-                <div class="award-logo has_fade_anim">
-                  <img src="assets/imgs/gallery/img-r-87.webp" alt="award-logo">
-                  <div class="thumbs-clip">
-                    <img src="assets/imgs/client/img-s-2.webp" alt="">
-                    <img src="assets/imgs/client/img-s-3.webp" alt="">
-                    <img src="assets/imgs/client/img-s-4.webp" alt="">
-                    <img src="assets/imgs/client/img-add-6.webp" alt="">
-                  </div>
-                </div>
+                
 
               </div>
             </div>
@@ -341,8 +223,7 @@
                   <div class="counter-wrapper">
                     <div class="counter-box">
                       <h3 class="number wc-counter">20M</h3>
-                      <p class="text">Emails per month
-                        and websites</p>
+                      <p class="text">Transaction per month</p>
                     </div>
                     <div class="counter-box">
                       <h3 class="number wc-counter">95%</h3>
@@ -350,8 +231,8 @@
                         satisfaction</p>
                     </div>
                     <div class="counter-box">
-                      <h3 class="number wc-counter">5k+</h3>
-                      <p class="text">Monthly campaign <br> with orders</p>
+                      <h3 class="number wc-counter">50k+</h3>
+                      <p class="text">Current Usage <br> per month </p>
                     </div>
                   </div>
                 </div>
@@ -368,7 +249,7 @@
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
                       <h2 class="section-title has_fade_anim">What clients say
-                        about sassly</h2>
+                        about Paybox</h2>
                     </div>
                   </div>
                 </div>
@@ -379,25 +260,25 @@
                         <div class="swiper-slide">
                           <div class="testimonial-content">
                             <div class="icon">
-                              <img src="assets/imgs/icon/quote.webp" alt="icon image">
+                              <img src="http://www.beeduconnect.com/wp-content/uploads/2016/11/nityanand_shetty.png" alt="icon image" style="max-width: 100px;">
                             </div>
                             <div class="text-wrapper">
-                              <p class="text">Analysts used Mode's advanced analytics capabilities to build
-                                parameterized
-                                report and visualizations with live data. The customer success team then used the
-                                intuitive
-                                drag interface to delve</p>
+                              <p class="text">
+                                Happy to share that Paybox has done very good work for us. They have put all the functions
+                                required for our institutes. Paybox was able to provide an integrated comprehensive ERP
+                                solution which integrate all the institutes & departments in one.
+                              </p>
                             </div>
                             <div class="meta">
-                              <h3 class="name">John Butler</h3>
-                              <span class="designation">Developer</span>
+                              <h3 class="name">Mr. Nityanand Shetty</h3>
+                              <span class="designation"> Bunts Sangha Group Of Institutions</span>
                             </div>
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="testimonial-content">
                             <div class="icon">
-                              <img src="assets/imgs/icon/quote.webp" alt="icon image">
+                              <img src="assets/imgs/icon/quote.webp" >
                             </div>
                             <div class="text-wrapper">
                               <p class="text">Analysts used Mode's advanced analytics capabilities to build
@@ -457,14 +338,12 @@
                 <div class="section-header">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">It actually work for
-                        cloud system based your app </h2>
+                      <h2 class="section-title has_fade_anim">Empowering Businesses with the Fintech Products of the Future </h2>
                     </div>
                   </div>
                   <div class="text-wrapper">
-                    <p class="text has_fade_anim">Winners never quit and quitters never win. Take all negative words out
-                      of your
-                      mental dictionary</p>
+                    <p class="text has_fade_anim">We provide innovative, future-ready payment solutions designed to meet the needs of today’s businesses, ensuring seamless transactions and driving growth in a fast-evolving digital world.
+                    </p>
                   </div>
                 </div>
                 <div class="integration-cards-wrapper">
@@ -476,31 +355,11 @@
                             <img src="assets/imgs/icon/icon-r-46.webp" alt="icon image">
                           </div>
                           <div class="content">
-                            <h3 class="title">Various Payment
-                              Gateways</h3>
-                            <p class="text">Build online communities with effective audience communication with various
-                              track
+                            <h3 class="title">Seamless Money Movement for Fintech Innovation
+                            </h3>
+                            <p class="text">Our robust payment stack ensures fast, efficient, and reliable transactions, handling everything from customer payments to payouts seamlessly.
                             </p>
-                            <a href="#" class="wc-btn wc-btn-normal">Learn more<i
-                                class="fa-solid fa-arrow-right"></i></a>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="has_fade_anim" data-delay="0.25">
-                      <a href="integration-single.html">
-                        <div class="integration-card">
-                          <div class="thumb">
-                            <img src="assets/imgs/icon/icon-r-47.webp" alt="icon image">
-                          </div>
-                          <div class="content">
-                            <h3 class="title">Premium Cloud
-                              Management</h3>
-                            <p class="text">Build online communities with effective audience communication with various
-                              track
-                            </p>
-                            <a href="#" class="wc-btn wc-btn-normal">Learn more<i
-                                class="fa-solid fa-arrow-right"></i></a>
+                          
                           </div>
                         </div>
                       </a>
@@ -512,17 +371,32 @@
                             <img src="assets/imgs/icon/icon-r-48.webp" alt="icon image">
                           </div>
                           <div class="content">
-                            <h3 class="title">Customer Support
-                              Platform</h3>
-                            <p class="text">Build online communities with effective audience communication with various
-                              track
+                            <h3 class="title">Focused on What Matters Most</h3>
+                            <p class="text">We handle the complexities of money movement, so you can focus on growing your business.
+                              With a customer-first approach, we continuously evolve and innovate to optimize end-to-end payment processes for your success.
                             </p>
-                            <a href="#" class="wc-btn wc-btn-normal">Learn more<i
-                                class="fa-solid fa-arrow-right"></i></a>
+                           
                           </div>
                         </div>
                       </a>
                     </div>
+                    <div class="has_fade_anim" data-delay="0.25">
+                      <a href="integration-single.html">
+                        <div class="integration-card">
+                          <div class="thumb">
+                            <img src="assets/imgs/icon/icon-r-47.webp" alt="icon image">
+                          </div>
+                          <div class="content">
+                            <h3 class="title">For Businesses of All Sizes
+                            </h3>
+                            <p class="text">From startups to large enterprises, our solutions are built to scale with your growth. Trusted by thousands, we’re here to empower businesses like yours every step of the way.
+                            </p>
+                         
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -642,17 +516,17 @@
                 <div class="shape-2">
                   <img src="assets/imgs/shape/shape-r-34.webp" alt="shape-1">
                 </div>
-                <div class="section-heading">
+                <div class="section-heading" style="max-width: 720px;">
                   <div class="title-wrapper">
-                    <h2 class="section-title has_fade_anim">Let’s start for 14 days free trial</h2>
+                    <h2 class="section-title has_fade_anim">Accelerate Your Customer Outreach
+                    </h2>
                   </div>
                   <div class="text-wrapper">
-                    <p class="text has_fade_anim">Optimize your impact this holiday season with an AI-driven,
-                      multichannel marketing
-                      strategy.</p>
+                    <p class="text has_fade_anim">OLeverage our prebuilt product suite to attract more customers without investing extra time or resources in development.
+
+                    </p>
                   </div>
                   <div class="btn-wrap has_fade_anim">
-                    <a href="contact.html" class="wc-btn-primary">Signup now</a>
                     <a href="contact.html" class="wc-btn-primary bordered">Request for demo</a>
                   </div>
                 </div>
@@ -666,58 +540,61 @@
         <!-- footer area start  -->
         <footer class="footer-area style-1">
           <div class="container">
-            <div class="footer-area-inner">
+            <div class="footer-area-inner pb-3">
               <div class="footer-widget-wrapper">
                 <div class="footer-logo">
-                  <img src="assets/imgs/logo/logo-light.webp" alt="site-logo">
+                  <h4 class="paybox-light">
+                    <span class="l1">Pay</span>
+                    <span class="l2">Box</span>
+                  </h4>
                 </div>
                 <div class="description-text">
                   <div class="text-wrapper">
-                    <p class="text">Sassly is a real early-stage software looking for an analytics platform that scales
-                      with you, check out our stage program.</p>
+                    <p>
+                      Paybox is a comprehensive product suite offering ready-to-use, general-purpose fintech solutions
+                      designed to help businesses kick-start their operations effortlessly. These products are VAPT and
+                      AppSec certified, ensuring top-notch security and reliability for your business needs.
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="footer-widget-wrapper">
-                <h2 class="title">Company</h2>
-                <ul class="footer-nav-list">
-                  <li><a href="#">about</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Press</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">System Status</a></li>
-                </ul>
-              </div>
-              <div class="footer-widget-wrapper">
-                <h2 class="title">Useful Link</h2>
-                <ul class="footer-nav-list">
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Resources</a></li>
-                  <li><a href="#">Service</a></li>
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Collection</a></li>
-                </ul>
-              </div>
-              <div class="footer-widget-wrapper">
-                <h2 class="title">Product</h2>
-                <ul class="footer-nav-list">
-                  <li><a href="#">Live Chat</a></li>
-                  <li><a href="#">Jirogram</a></li>
-                  <li><a href="#">Datasetico</a></li>
-                  <li><a href="#">Underline</a></li>
-                  <li><a href="#">Keyword</a></li>
-                </ul>
+               
+                <div class="links-text">
+                   <ul class="d-flex">
+                    <li class="me-3">
+                      <a  href="">Terms and Conditions</a>
+                    </li>
+                    <li class="me-3">
+                     <a href=""> Privacy Policy</a>
+                    </li>
+                    <li class="me-3">
+                     <a href=""> Grievance Redressal</a>
+                    </li>
+                  
+                   </ul>
+                </div>
               </div>
             </div>
             <div class="copyright-area-inner">
               <ul class="social-links">
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
               </ul>
               <div class="copyright-text">
-                <p class="text">© 2022 <a href="https://crowdyflow.com/">Crowdyflow</a> Agency</p>
+                <p class="text">
+                  © 2024 Designed and Developed <a href="https://wizgle.com/">Wizgle</a>
+                </p>
               </div>
             </div>
           </div>
@@ -727,109 +604,7 @@
       </div>
     </div>
   </div>
-  <!-- login form  -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="form-box-wrapper">
-          <div class="login-form-box">
-            <div class="btn-wrapper">
-              <button class="close-btn" data-bs-dismiss="modal"><img src="assets/imgs/icon/cross.webp"
-                  alt="icon image"></button>
-            </div>
-            <div class="title-wrapper">
-              <h2 class="title"><span>Welcome <br>
-                  Back to</span> Sassly </h2>
-            </div>
-            <div class="icon">
-              <img src="assets/imgs/shape/shape-s-55.webp" alt="shape image">
-            </div>
-            <div class="form-wrapper">
-              <form action="#" class="user-form">
-                <div class="input-field">
-                  <input type="email" placeholder="Enter your email">
-                </div>
-                <div class="input-field">
-                  <input type="password" placeholder="Enter password">
-                </div>
-                <div class="policy-field">
-                  <input type="checkbox" id="p-policy" name="p-policy" value="Boat">
-                  <label for="policy">Remember me</label>
-                  <a href="#" class="forget-password">Forgot your password?</a>
-                </div>
-                <button type="submit" class="subscribe-btn wc-btn-primary btn-text-flip"><span
-                    data-text="Login">Login</span></button>
-              </form>
-            </div>
-            <div class="note">
-              <p>Don’t have an account? <span><a href="javascript:void(0)" data-bs-dismiss="modal"
-                    data-bs-toggle="modal" data-bs-target="#signupform">Create Here!</a></span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- signup form  -->
-  <div class="modal fade" id="signupform" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="form-box-wrapper">
-          <div class="register-form-box">
-            <div class="btn-wrapper">
-              <button class="close-btn" data-bs-dismiss="modal"><img src="assets/imgs/icon/cross.webp"
-                  alt="icon image"></button>
-            </div>
-            <div class="title-wrapper">
-              <h2 class="title"><span>Start Your <br>
-                  Journey</span> with us.</h2>
-            </div>
-            <div class="icon">
-              <img src="assets/imgs/shape/shape-s-55.webp" alt="shape image">
-            </div>
-            <div class="form-wrapper">
-              <form action="#" class="user-form">
-                <div class="input-field">
-                  <input type="text" placeholder="Type your name">
-                </div>
-                <div class="input-field">
-                  <input type="text" placeholder="User name">
-                </div>
-                <div class="input-field">
-                  <input type="email" placeholder="Type Email">
-                </div>
-                <div class="input-field">
-                  <input type="password" placeholder="Type Password">
-                </div>
-                <div class="input-field">
-                  <input type="password" placeholder="Confirm Password">
-                </div>
-                <div class="policy-field">
-                  <input type="checkbox" id="d-policy" name="d-policy" value="Boat">
-                  <label for="d-policy">I agree to sassly <span><a href="#">Terms of Service.</a></span></label>
-                </div>
-                <button type="submit" class="subscribe-btn wc-btn-primary btn-text-flip"><span
-                    data-text="Register">Register</span></button>
-              </form>
-            </div>
-            <div class="note">
-              <p>Already have an account? <span><a href="javascript:void(0)" data-bs-dismiss="modal"
-                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login Here!</a></span></p>
-            </div>
-            <h3 class="alternative-title"><span>OR</span></h3>
-            <ul class="social-links">
-              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ 
 
 
   <!-- All JS files -->
