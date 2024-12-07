@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+
+  <title>PayBox</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="../assets/imgs/logo/favicon.webp">
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/master-about.css">
+
+  <style>
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+      font-family: "tropiline", sans-serif !important;
+    }
+  </style>
+
+  <style>
+   
+    .paybox {
+      margin-top: 6px;
+      display: flex;
+    }
+    .paybox-light {
+      margin-top: 6px;
+      display: flex;
+      color: #fff;
+    }
+    .links-text{
+      ul{
+        li{
+          a:hover{
+            color: #fff !important;
+          }
+        }
+      }
+    }
+    .header-area.style-1 .dp-menu li a{
+      color: #fff;
+    }
+    
+  </style>
+
+</head>
+
+
+<body class="font-heading-colasta-bold">
+
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+  <!-- offcanvas start  -->
+  <div class="offcanvas-area">
+    <div class="offcanvas-area-meta-wrapper">
+      <span id="close_offcanvas" class="close-offcanvas">
+        <img src="assets/imgs/icon/close.png" alt="close">
+      </span>
+     
+    </div>
+    <div class="offcanvas-area-menu-wrapper">
+      <ul id="accordion" class="accordion">
+        <li><a href="x-index.html">Home</a></li>
+        <li>
+          <div class="link">Products<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image"></div>
+          <ul class="submenu">
+            <li><a href="x-bc.html">BeeduConnect</a></li>
+            <li><a href="x-pc.html">ProCollect</a></li>
+            <li><a href="#">Society.IO</a></li>
+            <li style="opacity: 0.75; padding: 10px 0;">LearnShine</li>
+            <li  style="opacity: 0.75; padding: 10px 0;">SmartPos</li>
+            <li  style="opacity: 0.75; padding: 10px 0;">OnTheGo</li>
+          </ul>
+        </li>
+        <li><a href="x-about.html">About</a></li>
+        <li><a href="x-contact.html">Contact</a></li>
+      
+      </ul>
+    </div>
+  </div>
+  <!-- offcanvas end  -->
+
+  <!-- Header area start -->
+  <header class="header-area style-1 pos-abs zi-9">
+    <div class="container">
+      <div class="header-area__inner">
+        <div class="header__logo">
+          <a href="x-index.html">
+            <h4 class="paybox">
+              <span class="l1">Pay</span>
+              <span class="l2">Box</span>
+            </h4>
+          </a>
+        </div>
+        <div class="header__nav pos-center">
+          <nav class="main-menu">
+            <ul>
+              <li class="">
+                <a href="x-index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="javascript:void(0)">Products</a>
+                <ul class="dp-menu">
+                  <li><a href="x-bc.html">BeeduConnect</a></li>
+                  <li><a href="x-pc.html">ProCollect</a></li>
+                  <li><a href="#">Society.IO</a></li>
+                  <li  style="opacity: 0.75; padding: 10px 25px;">LearnShine</li>
+                  <li  style="opacity: 0.75; padding: 10px 25px;">SmartPos</li>
+                  <li  style="opacity: 0.75; padding: 10px 25px;">OnTheGo</li>
+                </ul>
+              </li>
+              <li><a href="x-about.html">About</a></li>
+              <li><a href="x-contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__button">
+          <a href="javascript:void(0)" class="wc-btn wc-btn-primary btn-text-flip" data-bs-toggle="modal"
+            data-bs-target="#signupform"> <span data-text="Let's Talk">Let's Talk
+              </span></a>
+        </div>
+        <div class="header__navicon d-xl-none">
+          <button onclick="showCanvas3()" class="open-offcanvas">
+            <i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header area end -->
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper body-booking">
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+
+        <main>
+
+          <!-- about hero start  -->
+          <section class="intro-area">
+            <div class="container">
+              <div class="intro-inner">
+                <div class="intro-top">
+                  <div class="intro-title-wrapper">
+                    <h2 class="intro-title has_fade_anim">Elevate Your Business with Paybox</h2>
+                  </div>
+                  <div class="intro-para has_fade_anim" data-delay="0.30">
+                    <div class="text-wrapper">
+                      <p class="text">We provide cutting-edge payment related products to meet the evolving needs of businesses. Streamline customer experiences, and stay ahead in the fast-paced world of commerce with our innovative solutions.</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="intro-gallary has_fade_anim" data-delay="0.45">
+                  <img src="assets/imgs/gallery/img-r-83.webp" alt="">
+                  <img src="assets/imgs/gallery/img-r-84.webp" alt="">
+                  <img src="assets/imgs/gallery/img-r-85.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- about hero end  -->
+
+          <!-- about area start  -->
+          <section class="about-area">
+            <div class="shape-1">
+              <img src="assets/imgs/shape/shape-r-35.webp" data-speed="0.8" alt="shape-1">
+            </div>
+            <div class="container">
+              <div class="about-inner" style="display: flex;">
+               
+                <div class="about-content">
+                  <div class="logo-wrap">
+                    <img src="assets/imgs/icon/icon-s-36.webp" alt="icon">
+                    <div class="logo">
+                      <span class="subtitle has_fade_anim">Paybox</span>
+                    </div>
+                  </div>
+                  <h2 class="title-2 has_fade_anim">Over <span>50+ client</span></h2>
+                  <h2 class="section-title has_fade_anim">We created over <span>20+</span> stunning
+                    and quality product over last 5 years with satisfaction.</h2>
+                </div>
+                
+
+              </div>
+            </div>
+          </section>
+          <!-- about area end  -->
+
+          <!-- counter area start  -->
+          <section class="counter-area section-spacing-bottom has_fade_anim">
+            <div class="container">
+              <div class="counter-area-inner">
+                <div class="counter-wrapper-box fix">
+                  <div class="counter-wrapper">
+                    <div class="counter-box">
+                      <h3 class="number wc-counter">20M</h3>
+                      <p class="text">Transaction per month</p>
+                    </div>
+                    <div class="counter-box">
+                      <h3 class="number wc-counter">95%</h3>
+                      <p class="text">Client support and
+                        satisfaction</p>
+                    </div>
+                    <div class="counter-box">
+                      <h3 class="number wc-counter">50k+</h3>
+                      <p class="text">Current Usage <br> per month </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- counter area end  -->
+
+          <!-- testimonial area start  -->
+          <section class="testimonial-area section-spacing">
+            <div class="container">
+              <div class="testimonial-area-inner">
+                <div class="section-header">
+                  <div class="section-title-wrapper">
+                    <div class="title-wrapper">
+                      <h2 class="section-title has_fade_anim">What clients say
+                        about Paybox</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-wrapper-box">
+                  <div class="testimonial-wrapper has_fade_anim">
+                    <div class="swiper testimonial-slider">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="testimonial-content">
+                            <div class="icon">
+                              <img src="http://www.beeduconnect.com/wp-content/uploads/2016/11/nityanand_shetty.png" alt="icon image" style="max-width: 100px;">
+                            </div>
+                            <div class="text-wrapper">
+                              <p class="text">
+                                Happy to share that Paybox has done very good work for us. They have put all the functions
+                                required for our institutes. Paybox was able to provide an integrated comprehensive ERP
+                                solution which integrate all the institutes & departments in one.
+                              </p>
+                            </div>
+                            <div class="meta">
+                              <h3 class="name">Mr. Nityanand Shetty</h3>
+                              <span class="designation"> Bunts Sangha Group Of Institutions</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="testimonial-content">
+                            <div class="icon">
+                              <img src="assets/imgs/icon/quote.webp" >
+                            </div>
+                            <div class="text-wrapper">
+                              <p class="text">Analysts used Mode's advanced analytics capabilities to build
+                                parameterized
+                                report and visualizations with live data. The customer success team then used the
+                                intuitive
+                                drag interface to delve</p>
+                            </div>
+                            <div class="meta">
+                              <h3 class="name">John Butler</h3>
+                              <span class="designation">Developer</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="testimonial-content">
+                            <div class="icon">
+                              <img src="assets/imgs/icon/quote.webp" alt="icon image">
+                            </div>
+                            <div class="text-wrapper">
+                              <p class="text">Analysts used Mode's advanced analytics capabilities to build
+                                parameterized
+                                report and visualizations with live data. The customer success team then used the
+                                intuitive
+                                drag interface to delve</p>
+                            </div>
+                            <div class="meta">
+                              <h3 class="name">John Butler</h3>
+                              <span class="designation">Developer</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="nav-wrapper">
+                      <div class="testimonial-button-prev">
+                        <img src="assets/imgs/icon/arrow-left-long.webp" alt="icon image">
+                      </div>
+                      <div class="testimonial-button-next">
+                        <img src="assets/imgs/icon/arrow-right-long.webp" alt="icon image">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- testimonial area end  -->
+
+          <!-- integration area start  -->
+          <div class="integration-area section-spacing-bottom">
+            <div class="shape-1">
+              <img src="assets/imgs/shape/shape-r-32.webp" alt="">
+            </div>
+            <div class="container">
+              <div class="integration-area-inner">
+                <div class="section-header">
+                  <div class="section-title-wrapper">
+                    <div class="title-wrapper">
+                      <h2 class="section-title has_fade_anim">Empowering Businesses with the Fintech Products of the Future </h2>
+                    </div>
+                  </div>
+                  <div class="text-wrapper">
+                    <p class="text has_fade_anim">We provide innovative, future-ready payment solutions designed to meet the needs of today’s businesses, ensuring seamless transactions and driving growth in a fast-evolving digital world.
+                    </p>
+                  </div>
+                </div>
+                <div class="integration-cards-wrapper">
+                  <div class="integration-cards">
+                    <div class="has_fade_anim">
+                      <a href="integration-single.html">
+                        <div class="integration-card">
+                          <div class="thumb">
+                            <img src="assets/imgs/icon/icon-r-46.webp" alt="icon image">
+                          </div>
+                          <div class="content">
+                            <h3 class="title">Seamless Money Movement for Fintech Innovation
+                            </h3>
+                            <p class="text">Our robust payment stack ensures fast, efficient, and reliable transactions, handling everything from customer payments to payouts seamlessly.
+                            </p>
+                          
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="has_fade_anim" data-delay="0.35">
+                      <a href="integration-single.html">
+                        <div class="integration-card">
+                          <div class="thumb">
+                            <img src="assets/imgs/icon/icon-r-48.webp" alt="icon image">
+                          </div>
+                          <div class="content">
+                            <h3 class="title">Focused on What Matters Most</h3>
+                            <p class="text">We handle the complexities of money movement, so you can focus on growing your business.
+                              With a customer-first approach, we continuously evolve and innovate to optimize end-to-end payment processes for your success.
+                            </p>
+                           
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="has_fade_anim" data-delay="0.25">
+                      <a href="integration-single.html">
+                        <div class="integration-card">
+                          <div class="thumb">
+                            <img src="assets/imgs/icon/icon-r-47.webp" alt="icon image">
+                          </div>
+                          <div class="content">
+                            <h3 class="title">For Businesses of All Sizes
+                            </h3>
+                            <p class="text">From startups to large enterprises, our solutions are built to scale with your growth. Trusted by thousands, we’re here to empower businesses like yours every step of the way.
+                            </p>
+                         
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- integration area end  -->
+
+          <!-- team area start  -->
+          <section class="team-area section-spacing-bottom">
+            <div class="container">
+              <div class="section-header">
+                <div class="section-title-wrapper">
+                  <div class="title-wrapper">
+                    <h2 class="section-title has_fade_anim">Meet our experts</h2>
+                  </div>
+                </div>
+                <div class="text-wrapper">
+                  <p class="text has_fade_anim">Winners never quit and quitters never win. Take all negative words out
+                    of your mental
+                    dictionary</p>
+                </div>
+              </div>
+              <div class="team-area-inner">
+                <div class="team-wrapper-box">
+                  <div class="team-wrapper">
+                    <div class="team-box has_fade_anim">
+                      <div class="thumb">
+                        <img src="assets/imgs/team/img-s-1.webp" alt="team image">
+                      </div>
+                      <div class="content">
+                        <h3 class="name">Kaiya Mira</h3>
+                        <span class="designation">Lead developer</span>
+                      </div>
+                    </div>
+                    <div class="team-box has_fade_anim" data-delay="0.25">
+                      <div class="thumb">
+                        <img src="assets/imgs/team/img-s-2.webp" alt="team image">
+                      </div>
+                      <div class="content">
+                        <h3 class="name">Charlie Stony</h3>
+                        <span class="designation">Project Manager</span>
+                      </div>
+                    </div>
+                    <div class="team-box has_fade_anim" data-delay="0.35">
+                      <div class="thumb">
+                        <img src="assets/imgs/team/img-s-3.webp" alt="team image">
+                      </div>
+                      <div class="content">
+                        <h3 class="name">Kanter Orisha</h3>
+                        <span class="designation">Senior developer</span>
+                      </div>
+                    </div>
+                    <div class="team-box has_fade_anim" data-delay="0.45">
+                      <div class="thumb">
+                        <img src="assets/imgs/team/img-s-4.webp" alt="team image">
+                      </div>
+                      <div class="content">
+                        <h3 class="name">Chieko Kiem</h3>
+                        <span class="designation">LSenior designer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- team area end  -->
+
+          <!-- brand area start  -->
+          <div class="brand-area section-spacing-bottom has_fade_anim">
+            <div class="container">
+              <div class="text-wrapper">
+                <p class="text">Paybox trusted by the great Companies and Institutions</p>
+              </div>
+              <div class="brand-logos">
+                <div class="swiper brand-active">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="logo">
+                        <img src="assets/imgs/brand/img-s-15.webp" alt="logo">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="logo">
+                        <img src="assets/imgs/brand/img-s-16.webp" alt="logo">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="logo">
+                        <img src="assets/imgs/brand/img-s-17.webp" alt="logo">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="logo">
+                        <img src="assets/imgs/brand/img-s-18.webp" alt="logo">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="logo">
+                        <img src="assets/imgs/brand/img-s-19.webp" alt="logo">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- brand area end  -->
+
+          <!-- cta area start  -->
+          <section class="cta-area section-spacing-bottom">
+            <div class="container">
+              <div class="cta-area-wrapper">
+                <div class="shape-1">
+                  <img src="assets/imgs/shape/shape-r-33.webp" alt="shape-1">
+                </div>
+                <div class="shape-2">
+                  <img src="assets/imgs/shape/shape-r-34.webp" alt="shape-1">
+                </div>
+                <div class="section-heading" style="max-width: 720px;">
+                  <div class="title-wrapper">
+                    <h2 class="section-title has_fade_anim">Accelerate Your Customer Outreach
+                    </h2>
+                  </div>
+                  <div class="text-wrapper">
+                    <p class="text has_fade_anim">OLeverage our prebuilt product suite to attract more customers without investing extra time or resources in development.
+
+                    </p>
+                  </div>
+                  <div class="btn-wrap has_fade_anim">
+                    <a href="x-contact.html" class="wc-btn-primary bordered">Request for demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- cta area end  -->
+
+        </main>
+
+        <!-- footer area start  -->
+        <footer class="footer-area style-1">
+          <div class="container">
+            <div class="footer-area-inner pb-3">
+              <div class="footer-widget-wrapper">
+                <div class="footer-logo">
+                  <h4 class="paybox-light">
+                    <span class="l1">Pay</span>
+                    <span class="l2">Box</span>
+                  </h4>
+                </div>
+                <div class="description-text">
+                  <div class="text-wrapper">
+                    <p>
+                      Paybox is a comprehensive product suite offering ready-to-use, general-purpose fintech solutions
+                      designed to help businesses kick-start their operations effortlessly. These products are VAPT and
+                      AppSec certified, ensuring top-notch security and reliability for your business needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-widget-wrapper">
+               
+                <div class="links-text">
+                   <ul class="d-flex">
+                    <li class="me-3">
+                      <a  href="">Terms and Conditions</a>
+                    </li>
+                    <li class="me-3">
+                     <a href=""> Privacy Policy</a>
+                    </li>
+                    <li class="me-3">
+                     <a href=""> Grievance Redressal</a>
+                    </li>
+                  
+                   </ul>
+                </div>
+              </div>
+            </div>
+            <div class="copyright-area-inner">
+              <ul class="social-links">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+              </ul>
+              <div class="copyright-text">
+                <p class="text">
+                  © 2024 Designed and Developed <a href="https://wizgle.com/">Wizgle</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer area end  -->
+
+      </div>
+    </div>
+  </div>
+ 
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/backToTop.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/error-handling.js"></script>
+  <script src="assets/js/wc-cursor.js"></script>
+  <script src="assets/js/offcanvas.js"></script>
+
+  <script>
+    // corporate_brand_slider_active
+    if ('.testimonial-active') {
+      var testimonial_slider_active = new Swiper(".testimonial-active", {
+        slidesPerView: 1,
+        loop: false,
+        autoplay: false,
+        spaceBetween: 60,
+        speed: 3000,
+      });
+    }
+
+
+    // brand
+    if ('.brand-active') {
+      var brand_slider_active = new Swiper(".brand-active", {
+        slidesPerView: 6,
+        loop: true,
+        autoplay: true,
+        spaceBetween: 60,
+        speed: 3000,
+        autoplay: {
+          delay: .1,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          375: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+          // when window width is >= 480px
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          // when window width is >= 640px
+          900: {
+            slidesPerView: 4,
+            spaceBetween: 40
+          },
+          // when window width is >= 1366px
+          1366: {
+            slidesPerView: 6,
+          },
+        }
+      });
+    }
+
+
+    const toggle_switcher = function ($scope) {
+      const checked = $("input", $scope);
+      const toggle_pane = $(".toggle-pane", $scope);
+      const toggle_label = $(".before_label, .after_label", $scope);
+
+      checked.change(function () {
+        toggle_pane.toggleClass('show');
+        toggle_label.toggleClass('active');
+      })
+    }
+  </script>
+
+
+
+</body>
+
+</html>
