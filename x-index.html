@@ -37,6 +37,9 @@
       color: #fff;
     }
 
+    .header-area.style-1 .header-area__inner{
+      background-color: #fff !important;
+    }
     .header-area.sticky {
       .header-area__inner {
         background-color: #072032 !important;
@@ -50,6 +53,10 @@
 
       .main-menu li a {
         color: #fff;
+
+        span{
+          color: #fff !important;
+        }
       }
     }
 
@@ -63,24 +70,26 @@
       }
     }
 
-    .notify-area{
+    .notify-area {
       background-color: #ff845d;
     }
 
     @media only screen and (max-width: 767px) {
 
-      .counter-area .counter-thumbs .shape-2{
+      .counter-area .counter-thumbs .shape-2 {
         display: flex;
       }
 
-      .community-area .community-thumb{
+      .community-area .community-thumb {
         max-width: 80vw;
       }
+
       .community-area .community-thumb .shape-1 {
         display: flex;
         max-width: 50px !important;
       }
-      .community-area .community-thumb .shape-2{
+
+      .community-area .community-thumb .shape-2 {
         display: flex;
         max-width: 90px !important;
       }
@@ -177,20 +186,43 @@
       <ul id="accordion" class="accordion">
         <li><a href="x-index.html">Home</a></li>
         <li>
-          <div class="link">Products<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          <div class="link">BeeduConnect<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
           </div>
           <ul class="submenu">
-            <li><a href="x-bc.html">BeeduConnect</a></li>
-            <li><a href="x-pc.html">ProCollect</a></li>
-            <li><a href="x-index.html">Society.IO</a></li>
-            <li><a href="x-co.html">Checkout 2.0</a></li>
-            <li style="opacity: 0.75; padding: 10px 0;">LearnShine</li>
-            <li style="opacity: 0.75; padding: 10px 0;">SmartPos</li>
+            <li><a href="x-bc.html">Home</a></li>
+            <li><a href="x-bc-features.html">Features</a></li>
+            <li><a href="x-bc-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link">ProCollect<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-pc.html">Home</a></li>
+            <li><a href="x-pc-features.html">Features</a></li>
+            <li><a href="x-pc-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link">Society.IO<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-si.html">Home</a></li>
+            <li><a href="x-si-features.html">Features</a></li>
+            <li><a href="x-si-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link">Checkout2.0<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-co.html">Home</a></li>
+            <li><a href="x-co-features.html">Features</a></li>
+            <li><a href="x-co-pricing.html">Pricing</a></li>
           </ul>
         </li>
         <li><a href="x-about.html">About</a></li>
         <li><a href="x-contact.html">Contact</a></li>
-
       </ul>
     </div>
   </div>
@@ -210,17 +242,47 @@
           <nav class="main-menu">
             <ul>
               <li class="">
-                <a href="x-index.html">Home</a>
+                <a href="javascript:void(0)">
+                  Beedu
+                  <span style="color: #6965e0;">Connect</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-bc.html">Home</a></li>
+                  <li><a href="x-bc-features.html">Features</a></li>
+                  <li><a href="x-bc-pricing.html">Pricing</a></li>
+                </ul>
               </li>
               <li class="">
-                <a href="javascript:void(0)">Products</a>
+                <a href="javascript:void(0)">
+                  Pro
+                  <span style="color: #4a2c7d;">Collect</span>
+                </a>
                 <ul class="dp-menu">
-                  <li><a href="x-bc.html">BeeduConnect</a></li>
-                  <li><a href="x-pc.html">ProCollect</a></li>
-                  <li><a href="x-si.html">Society.IO</a></li>
-                  <li><a href="x-co.html">Checkout 2.0</a></li>
-                  <li style="opacity: 0.75; padding: 10px 25px;">LearnShine</li>
-                  <li style="opacity: 0.75; padding: 10px 25px;">SmartPos</li>
+                  <li><a href="x-pc.html">Home</a></li>
+                  <li><a href="x-pc-features.html">Features</a></li>
+                  <li><a href="x-pc-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Society
+                  <span style="color: #cc071e;">Collect</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-si.html">Home</a></li>
+                  <li><a href="x-si-features.html">Features</a></li>
+                  <li><a href="x-si-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Checkout
+                  <span style="color: #0989ff;">2.0</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-co.html">Home</a></li>
+                  <li><a href="x-co-features.html">Features</a></li>
+                  <li><a href="x-co-pricing.html">Pricing</a></li>
                 </ul>
               </li>
               <li><a href="x-about.html">About</a></li>

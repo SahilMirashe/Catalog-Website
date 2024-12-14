@@ -117,6 +117,25 @@
     .footer-area{
       background-color: #f0f2f8;
     }
+
+    .paybox {
+      margin-top: 6px;
+      display: flex;
+      color: #fff;
+    }
+
+    .paybox {
+      margin-top: 6px;
+      display: flex;
+      color: #0f2552;
+    }
+    .main-menu ul.dp-menu{
+      border-radius: 34px;
+      border: 4px solid #ede6fe;
+    }
+    .main-menu ul.dp-menu li a{
+      color: #ede6fe;
+    }
   </style>
 
 </head>
@@ -139,43 +158,116 @@
     </div>
     <div class="offcanvas-area-menu-wrapper">
       <ul id="accordion" class="accordion">
-        <li><a href="x-pc.html">Home</a></li>
-        <li><a href="x-pc-features.html">Features</a></li>
-        <li><a href="x-pc-pricing.html">Pricing</a></li>
+        <li><a href="x-index.html">Home</a></li>
+        <li>
+          <div class="link">BeeduConnect<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-bc.html">Home</a></li>
+            <li><a href="x-bc-features.html">Features</a></li>
+            <li><a href="x-bc-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link">ProCollect<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-pc.html">Home</a></li>
+            <li><a href="x-pc-features.html">Features</a></li>
+            <li><a href="x-pc-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link">Society.IO<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-si.html">Home</a></li>
+            <li><a href="x-si-features.html">Features</a></li>
+            <li><a href="x-si-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link">Checkout2.0<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-co.html">Home</a></li>
+            <li><a href="x-co-features.html">Features</a></li>
+            <li><a href="x-co-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li><a href="x-about.html">About</a></li>
+        <li><a href="x-contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 
   <header class="header-area style-1 pos-abs zi-9">
-    <div class="header-area__inner">
-      <div class="container">
-        <div class="header-area__items">
-          <div class="header__logo">
-            <a href="x-pc.html">
-              <h4 class="pc-logo">
-                <span class="l1">Pro</span>
-                <span class="l2">Collect</span>
-              </h4>
-            </a>
-          </div>
-          <div class="header__nav pos-center">
-            <nav class="main-menu">
-              <ul>
-                <li><a href="x-pc.html">Home</a></li>
-                <li><a href="x-pc-features.html">Features</a></li>
-                <li><a href="x-pc-pricing.html">Pricing</a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="header__button">
-            <a href="x-contact.html" class="wc-btn-primary btn-text-flip"> <span data-text="Let's Talk">Let's
-                Talk</span></a>
-          </div>
-          <div class="header__navicon d-xl-none">
-            <button onclick="showCanvas3()" class="open-offcanvas">
-              <i class="fa-solid fa-bars"></i></button>
-          </div>
+    <div class="container">
+      <div class="header-area__inner">
+        <div class="header__logo">
+          <a href="x-index.html">
+            <h4 class="paybox">
+              <span class="l1">Pay</span>
+              <span class="l2">Box</span>
+            </h4>
+          </a>
+        </div>
+        <div class="header__nav ">
+          <nav class="main-menu">
+            <ul>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Beedu
+                  <span style="color: #6965e0;">Connect</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-bc.html">Home</a></li>
+                  <li><a href="x-bc-features.html">Features</a></li>
+                  <li><a href="x-bc-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Pro
+                  <span style="color: #4a2c7d;">Collect</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-pc.html">Home</a></li>
+                  <li><a href="x-pc-features.html">Features</a></li>
+                  <li><a href="x-pc-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Society
+                  <span style="color: #cc071e;">Collect</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-si.html">Home</a></li>
+                  <li><a href="x-si-features.html">Features</a></li>
+                  <li><a href="x-si-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Checkout
+                  <span style="color: #0989ff;">2.0</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-co.html">Home</a></li>
+                  <li><a href="x-co-features.html">Features</a></li>
+                  <li><a href="x-co-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li><a href="x-about.html">About</a></li>
+              <li><a href="x-contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+       
+        <div class="header__navicon d-xl-none">
+          <button onclick="showCanvas3()" class="open-offcanvas">
+            <i class="fa-solid fa-bars"></i></button>
         </div>
       </div>
     </div>

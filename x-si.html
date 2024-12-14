@@ -9,18 +9,14 @@
 
   <title>Paybox - Society.IO</title>
 
-  <!-- Fav Icon -->
   <link rel="icon" type="image/x-icon" href="../assets/imgs/logo/favicon.webp">
 
-  <!-- All CSS files -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/meanmenu.min.css">
   <link rel="stylesheet" href="assets/css/magnific-popup.css">
   <link rel="stylesheet" href="assets/css/master-mobile-apps.css">
-
-  
 
   <style>
     .h1,
@@ -108,8 +104,49 @@
   </style>
 
   <style>
-    .header-area.sticky .header-area__inner .si-logo .l2{
+    .header-area.sticky .header-area__inner .si-logo .l2 {
       color: #fff;
+    }
+
+    .footer-area.style-2 {
+      margin-inline-start: 0 !important;
+      margin-inline-end: 0 !important;
+      background-color: #cc071e11;
+    }
+
+    .main-menu ul.dp-menu {
+      border-radius: 34px;
+      border: 4px solid #ede6fe;
+    }
+
+    .main-menu ul.dp-menu li a {
+      color: #ede6fe;
+    }
+
+    .header-area.sticky {
+      .paybox {
+        margin-top: 6px;
+        display: flex;
+        color: #fff;
+      }
+
+      .main-menu ul.dp-menu {
+        border-radius: 34px;
+        border: 4px solid #ede6fe;
+      }
+
+      .main-menu ul.dp-menu li a {
+        color: #ede6fe;
+      }
+
+      .main-menu li a {
+        color: #fff;
+
+        span {
+          color: #fff !important;
+        }
+      }
+
     }
   </style>
 
@@ -118,61 +155,127 @@
 
 <body class="font-heading-beatrice-medium">
 
-
-
-  <!-- Sroll to top -->
   <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
     </svg>
   </div>
 
-  <!-- offcanvas start  -->
   <div class="offcanvas-area">
     <div class="offcanvas-area-meta-wrapper">
       <span id="close_offcanvas" class="close-offcanvas">
         <img src="assets/imgs/icon/close.png" alt="close">
       </span>
-      <div class="offcanvas-btn-wrapper">
-
-      </div>
     </div>
     <div class="offcanvas-area-menu-wrapper">
       <ul id="accordion" class="accordion">
-        <li><a href="x-pc.html">Home</a></li>
-        <li><a href="x-pc-features.html">Features</a></li>
-        <li><a href="x-pc-pricing.html">Pricing</a></li>
+        <li><a href="x-index.html">Home</a></li>
+        <li>
+          <div class="link">BeeduConnect<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-bc.html">Home</a></li>
+            <li><a href="x-bc-features.html">Features</a></li>
+            <li><a href="x-bc-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link">ProCollect<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-pc.html">Home</a></li>
+            <li><a href="x-pc-features.html">Features</a></li>
+            <li><a href="x-pc-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link">Society.IO<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-si.html">Home</a></li>
+            <li><a href="x-si-features.html">Features</a></li>
+            <li><a href="x-si-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link">Checkout2.0<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-co.html">Home</a></li>
+            <li><a href="x-co-features.html">Features</a></li>
+            <li><a href="x-co-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li><a href="x-about.html">About</a></li>
+        <li><a href="x-contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
-  <!-- offcanvas end  -->
 
-  <!-- Header area start -->
   <header class="header-area style-1 pos-abs zi-9">
     <div class="container">
       <div class="header-area__inner">
         <div class="header__logo">
-          <a href="x-si.html">
-            <h4 class="si-logo">
-              <span class="l1">Society</span>
-              <span class="l2">.IO</span>
+          <a href="x-index.html">
+            <h4 class="paybox">
+              <span class="l1">Pay</span>
+              <span class="l2">Box</span>
             </h4>
           </a>
         </div>
-        <div class="header__nav pos-center">
+        <div class="header__nav ">
           <nav class="main-menu">
             <ul>
-              <li><a href="x-pc.html">Home</a></li>
-              <li><a href="x-pc-features.html">Features</a></li>
-              <li><a href="x-pc-pricing.html">Pricing</a></li>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Beedu
+                  <span style="color: #6965e0;">Connect</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-bc.html">Home</a></li>
+                  <li><a href="x-bc-features.html">Features</a></li>
+                  <li><a href="x-bc-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Pro
+                  <span style="color: #4a2c7d;">Collect</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-pc.html">Home</a></li>
+                  <li><a href="x-pc-features.html">Features</a></li>
+                  <li><a href="x-pc-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Society
+                  <span style="color: #cc071e;">Collect</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-si.html">Home</a></li>
+                  <li><a href="x-si-features.html">Features</a></li>
+                  <li><a href="x-si-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Checkout
+                  <span style="color: #0989ff;">2.0</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-co.html">Home</a></li>
+                  <li><a href="x-co-features.html">Features</a></li>
+                  <li><a href="x-co-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li><a href="x-about.html">About</a></li>
+              <li><a href="x-contact.html">Contact</a></li>
             </ul>
           </nav>
         </div>
-        <div class="header__button">
-          <a href="javascript:void(0)" class="wc-btn-primary btn-text-flip" data-bs-toggle="modal"
-            data-bs-target="#signupform"> <span data-text="Let's Talk">Let's Talk
-              </span></a>
-        </div>
+
         <div class="header__navicon d-xl-none">
           <button onclick="showCanvas3()" class="open-offcanvas">
             <i class="fa-solid fa-bars"></i></button>
@@ -180,36 +283,31 @@
       </div>
     </div>
   </header>
-  <!-- Header area end -->
 
   <div class="has-smooth" id="has_smooth"></div>
+
   <div id="smooth-wrapper">
+
     <div id="smooth-content">
+
       <div class="body-wrapper body-mobile-apps">
 
-        <!-- overlay switcher close  -->
         <div class="overlay-switcher-close"></div>
 
         <main>
 
-
-          <!-- intro area start  -->
           <section class="intro-area">
-            <img class="shape-1" src="assets/imgs/shape/shape-r-16.webp" alt="shape">
-            <img class="shape-2" src="assets/imgs/shape/shape-r-17.webp" alt="shape">
-            <img class="shape-3" src="assets/imgs/gallery/shape-r-19.png" alt="shape">
+
             <div class="container">
               <div class="intro-wrapper">
 
                 <div class="intro-title-wrap">
 
-                  <h2 class="intro-title has_fade_anim" data-delay="0.30">A digital revolution towards eSmart housing
-                    societies
+                  <h2 class="intro-title has_fade_anim" data-delay="0.30">A revolution towards eSmart housing
+                    societies.
                   </h2>
                 </div>
-                <div class="ticket-box has_fade_anim" data-delay="0.45">
-                  <p class="title">maintenance Paid Successfully</p>
-                </div>
+
                 <div class="mobile-thumb">
                   <img src="assets/imgs/gallery/img-r-29.png" data-speed="1.2" alt="mobile-thumb">
                 </div>
@@ -220,13 +318,10 @@
               </p>
               <div class="button-wrapper has_fade_anim">
                 <a href="#" class="wc-btn-primary">Download App</a>
-
               </div>
             </div>
           </section>
-          <!-- intro area end  -->
 
-          <!-- brand area start  -->
           <div class="brand-area section-spacing-bottom has_fade_anim">
             <div class="container">
               <div class="text-wrapper">
@@ -265,13 +360,9 @@
               </div>
             </div>
           </div>
-          <!-- brand area end  -->
 
-          <!-- feature area start  -->
           <section class="feature-area">
-            <div class="shape-1">
-              <img src="assets/imgs/shape/shape-r-27.webp" data-speed="0.8" alt="shape">
-            </div>
+
             <div class="container">
               <div class="feature-inner">
                 <div class="feature-top">
@@ -597,7 +688,8 @@
                         <h3 class="title">Analytics for Informed Decisions
                         </h3>
                         <p class="text">
-                          Access systematic data collection and interpretation to understand trends and optimize society operations effectively.
+                          Access systematic data collection and interpretation to understand trends and optimize society
+                          operations effectively.
                         </p>
                       </div>
                     </li>
@@ -627,7 +719,7 @@
                           <img src="assets/imgs/gallery/img-r-41.webp" alt="showcase">
                         </div>
                       </div>
-                     
+
                     </div>
                   </div>
                 </div>
@@ -661,7 +753,8 @@
                         <h2 class="accordion-header" id="flush-headingOne">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false"
-                            aria-controls="flush-collapseOne">Is the pricing per annum or per month or per flat?</button>
+                            aria-controls="flush-collapseOne">Is the pricing per annum or per month or per
+                            flat?</button>
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                           aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -687,13 +780,15 @@
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false"
                             aria-controls="flush-collapseThree">Is there a ticketing system available?
-                                               
+
                           </button>
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                           aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                           <div class="accordion-body">
-                            Yes, we have a ticketing system in place. Our ticketing system allows you to conveniently raise and track any support or service requests you may have. It helps us ensure that your concerns are addressed promptly and efficiently.
+                            Yes, we have a ticketing system in place. Our ticketing system allows you to conveniently
+                            raise and track any support or service requests you may have. It helps us ensure that your
+                            concerns are addressed promptly and efficiently.
                           </div>
                         </div>
                       </div>
@@ -706,7 +801,10 @@
                         </h2>
                         <div id="flush-collapseFour" class="accordion-collapse collapse"
                           aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Yes, our service is operational across the globe. We strive to provide our services to customers worldwide, ensuring that they can access and utilize our offerings from any location. Whether you are in North America, Europe, Asia, or any other part of the world, you can benefit from our services.
+                          <div class="accordion-body">Yes, our service is operational across the globe. We strive to
+                            provide our services to customers worldwide, ensuring that they can access and utilize our
+                            offerings from any location. Whether you are in North America, Europe, Asia, or any other
+                            part of the world, you can benefit from our services.
                           </div>
                         </div>
                       </div>
@@ -714,16 +812,18 @@
                         <h2 class="accordion-header" id="flush-headingsix">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseFive" aria-expanded="false"
-                            aria-controls="flush-collapseFive">What payment methods do you accept for subscribing to Society.IO?
+                            aria-controls="flush-collapseFive">What payment methods do you accept for subscribing to
+                            Society.IO?
                           </button>
                         </h2>
                         <div id="flush-collapseFive" class="accordion-collapse collapse"
                           aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">We accept all type of payment methods for your ease and convenience.
+                          <div class="accordion-body">We accept all type of payment methods for your ease and
+                            convenience.
                           </div>
                         </div>
                       </div>
-                     
+
                     </div>
                   </div>
                 </div>
@@ -752,7 +852,8 @@
                 </div>
                 <div class="description-text">
                   <div class="text-wrapper">
-                    <p class="">Improve your society's efficiency and teamwork with our user-friendly collaboration platform. Our intuitive society management tool will revolutionise community collaboration.
+                    <p class="">Improve your society's efficiency and teamwork with our user-friendly collaboration
+                      platform. Our intuitive society management tool will revolutionise community collaboration.
 
 
 
