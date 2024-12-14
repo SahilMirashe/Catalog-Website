@@ -4497,7 +4497,7 @@ h6 {
 }
 
 .header-area.sticky button i {
-    color: var(--white)
+    /* color: var(--white) */
 }
 
 .modal {
@@ -9683,9 +9683,10 @@ section {
 
 @media only screen and (max-width: 767px) {
     .installation-area .step-item {
-        width: 48%;
+        width: 100%;
         border: 1px solid #ebedef;
-        padding: 15px
+        padding: 15px;
+        border-radius: 20px;
     }
 }
 
@@ -10824,9 +10825,7 @@ section {
     }
 }
 
-.footer-area.style-2 .footer-area-inner {
-    padding-top: 0
-}
+
 
 @media only screen and (max-width: 991px) {
     .footer-area.style-2 .footer-area-inner {
