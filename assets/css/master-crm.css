@@ -9297,7 +9297,7 @@ body {
 }
 
 .header-area.style-1 .header-area__inner {
-    max-width: 950px;
+    /* max-width: 950px; */
     margin: 20px auto;
     background-color: rgba(255, 255, 255, .8196078431);
     border-radius: 50px;
@@ -9519,11 +9519,11 @@ body {
 }
 
 .info-card.style-2 .title-wrapper {
-    max-width: 246px
+    max-width: 246px;
 }
 
-.info-card.style-2 .title {s
-    color: var(--primary)
+.info-card.style-2 .title {
+    color: var(--primary);
 }
 
 .info-card.style-2 .thumbs {

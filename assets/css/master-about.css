@@ -4497,7 +4497,7 @@ h6 {
 }
 
 .header-area.sticky button i {
-    color: var(--white)
+    /* color: var(--white) */
 }
 
 .modal {

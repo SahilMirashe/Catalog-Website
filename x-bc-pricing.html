@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="BeeduCatalog HTML5 Template">
 
-  <title>BeeduConnect - Pricing</title>
+  <title>Paybox - BeeduConnect - Pricing</title>
 
   <!-- Fav Icon -->
   <link rel="icon" type="image/x-icon" href="../assets/imgs/logo/favicon.webp">
@@ -148,6 +148,26 @@
     .pricing-area:before {
       background: linear-gradient(180deg, #f6f6fe 0%, rgba(251, 247, 244, 0) 100%) !important;
     }
+
+    .paybox {
+      margin-top: 6px;
+      display: flex;
+      color: #fff;
+    }
+
+    .paybox {
+      margin-top: 6px;
+      display: flex;
+      color: #0f2552;
+    }
+    .main-menu ul.dp-menu{
+      border-radius: 34px;
+      border: 4px solid #ede6fe;
+    }
+    .main-menu ul.dp-menu li a{
+      color: #ede6fe;
+    }
+    
   </style>
 </head>
 
@@ -155,68 +175,135 @@
 <body class="font-heading-colasta-bold">
 
 
-  <!-- Sroll to top -->
+
   <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
     </svg>
   </div>
 
-
-  <!-- offcanvas start  -->
   <div class="offcanvas-area">
     <div class="offcanvas-area-meta-wrapper">
       <span id="close_offcanvas" class="close-offcanvas">
         <img src="assets/imgs/icon/close.png" alt="close">
       </span>
-
     </div>
     <div class="offcanvas-area-menu-wrapper">
       <ul id="accordion" class="accordion">
-        <li><a href="x-bc.html">Home</a></li>
-        <li><a href="x-bc-features.html">Features</a></li>
-        <li><a href="x-bc-pricing.html">Pricing</a></li>
-      </ul>
+        <li><a href="x-index.html">Home</a></li>
+        <li>
+          <div class="link">BeeduConnect<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-bc.html">Home</a></li>
+            <li><a href="x-bc-features.html">Features</a></li>
+            <li><a href="x-bc-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link">ProCollect<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-pc.html">Home</a></li>
+            <li><a href="x-pc-features.html">Features</a></li>
+            <li><a href="x-pc-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link">Society.IO<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-si.html">Home</a></li>
+            <li><a href="x-si-features.html">Features</a></li>
+            <li><a href="x-si-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="link">Checkout2.0<img class="angle-down" src="assets/imgs/icon/angle-down.png" alt="icon image">
+          </div>
+          <ul class="submenu">
+            <li><a href="x-co.html">Home</a></li>
+            <li><a href="x-co-features.html">Features</a></li>
+            <li><a href="x-co-pricing.html">Pricing</a></li>
+          </ul>
+        </li>
+        <li><a href="x-about.html">About</a></li>
+        <li><a href="x-contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
-  <!-- offcanvas end  -->
 
-  <!-- Header area start -->
   <header class="header-area style-1 pos-abs zi-9">
     <div class="container">
       <div class="header-area__inner">
         <div class="header__logo">
-          <a href="x-bc.html">
-            <h4 class="bc-logo">
-              <span class="l1">Beedu</span>
-              <span class="l2">Connect</span>
+          <a href="x-index.html">
+            <h4 class="paybox">
+              <span class="l1">Pay</span>
+              <span class="l2">Box</span>
             </h4>
           </a>
         </div>
-        <div class="header__nav pos-center">
+        <div class="header__nav ">
           <nav class="main-menu">
             <ul>
-              <li><a href="x-bc.html">Home</a></li>
-              <li><a href="x-bc-features.html">Features</a></li>
-              <li><a href="x-bc-pricing.html">Pricing</a></li>
-            </ul>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Beedu
+                  <span style="color: #6965e0;">Connect</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-bc.html">Home</a></li>
+                  <li><a href="x-bc-features.html">Features</a></li>
+                  <li><a href="x-bc-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Pro
+                  <span style="color: #4a2c7d;">Collect</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-pc.html">Home</a></li>
+                  <li><a href="x-pc-features.html">Features</a></li>
+                  <li><a href="x-pc-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Society
+                  <span style="color: #cc071e;">.IO</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-si.html">Home</a></li>
+                  <li><a href="x-si-features.html">Features</a></li>
+                  <li><a href="x-si-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:void(0)">
+                  Checkout
+                  <span style="color: #0989ff;">2.0</span>
+                </a>
+                <ul class="dp-menu">
+                  <li><a href="x-co.html">Home</a></li>
+                  <li><a href="x-co-features.html">Features</a></li>
+                  <li><a href="x-co-pricing.html">Pricing</a></li>
+                </ul>
+              </li>
+              <li><a href="x-about.html">About</a></li>
+              <li><a href="x-contact.html">Contact</a></li>
             </ul>
           </nav>
         </div>
-        <div class="header__button">
-          <a href="x-contact.html" class="wc-btn-primary btn-text-flip">
-            <span data-text="Sign up">Let’s Talk</span></a>
-        </div>
+       
         <div class="header__navicon d-xl-none">
           <button onclick="showCanvas3()" class="open-offcanvas">
-            <i class="fa-solid fa-bars"></i>
-          </button>
+            <i class="fa-solid fa-bars"></i></button>
         </div>
       </div>
     </div>
   </header>
-  <!-- Header area end -->
 
   <div class="has-smooth" id="has_smooth"></div>
   <div id="smooth-wrapper">
@@ -266,8 +353,7 @@
                               <p class="description">Mostly prefered by Play and Junior Schools</p>
                               <h3 class="price">₹20 </h3>
                               <p> per user per month billed annually</p>
-                              <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                  data-text="Request Demo">Request Demo</span></a>
+                             
                               <div class="feature-list">
                                 <ul>
                                   <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Institute Setup</li>
@@ -291,8 +377,7 @@
                               <p class="description">Mostly prefered by Middle and High Schools</p>
                               <h3 class="price">₹30 </h3>
                               <p> per user per month billed annually</p>
-                              <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                  data-text="Request Demo">Request Demo</span></a>
+                             
                               <div class="feature-list">
                                 <ul>
                                   <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Everything in Silver
@@ -318,8 +403,7 @@
                               <p class="description">Mostly prefered by Middle, High Schools and Colleges</p>
                               <h3 class="price">₹40 </h3>
                               <p> per user per month billed annually</p>
-                              <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                  data-text="Request Demo">Request Demo</span></a>
+                              
                               <div class="feature-list">
                                 <ul>
                                   <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Everything in Gold Plan
@@ -342,8 +426,7 @@
                               <p class="description">Mostly prefered by Colleges and Higer Educational Institutions</p>
                               <h3 class="price">₹60 </h3>
                               <p> per user per month billed annually</p>
-                              <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                                  data-text="Request Demo">Request Demo</span></a>
+                             
                               <div class="feature-list">
                                 <ul>
                                   <li><img src="assets/imgs/icon/check-3.webp" alt="icon image">Everything in Platinum
@@ -370,7 +453,7 @@
                               <h1 class="">Basic</h1>
                               <p class="description">Ability to understand and generate content</p>
                               <h3 class="price">$89 <span>/month</span></h3>
-                              <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
+                              <a href="x-contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
                                   data-text="Test 14 days for free">Test 14 days for free</span></a>
                               <div class="feature-list">
                                 <ul>
@@ -394,7 +477,7 @@
                               <p class="title">Standard</p>
                               <p class="description">Additional user account and collaboration</p>
                               <h3 class="price">$189 <span>/month</span></h3>
-                              <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
+                              <a href="x-contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
                                   data-text="Test 14 days for free">Test 14 days for free</span></a>
                               <div class="feature-list">
                                 <ul>
@@ -419,7 +502,7 @@
                               <p class="title">Silver</p>
                               <p class="description">Ability to understand and generate content</p>
                               <h3 class="price">$589 <span>/month</span></h3>
-                              <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
+                              <a href="x-contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
                                   data-text="Test 14 days for free">Test 14 days for free</span></a>
                               <div class="feature-list">
                                 <ul>
@@ -442,7 +525,7 @@
                               <p class="title">Premium</p>
                               <p class="description">Ability to understand and generate content</p>
                               <h3 class="price">$889 <span>/month</span></h3>
-                              <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
+                              <a href="x-contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
                                   data-text="Test 14 days for free">Test 14 days for free</span></a>
                               <div class="feature-list">
                                 <ul>
@@ -476,9 +559,7 @@
           <section class="faq-area section-spacing">
             <div class="container">
               <div class="faq-area-inner">
-                <div class="shape-1">
-                  <img src="assets/imgs/shape/shape-s-60.webp" alt="shape image">
-                </div>
+                
                 <div class="section-content">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
@@ -647,7 +728,7 @@
                     </p>
                   </div>
                   <div class="btn-wrapper has_fade_anim">
-                    <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip bordered"> <span
+                    <a href="x-contact.html" class="wc-btn wc-btn-primary btn-text-flip bordered"> <span
                         data-text="Request Demo">Request Demo</span></a>
                   </div>
                 </div>
@@ -700,7 +781,7 @@
               <div class="copyright-text">
                 <p class="text">
                   © 2024 Designed and Developed
-                  <a href="https://wizgle.com/">Wizgle</a>
+                  <a href="#">Wizgle</a>
                 </p>
               </div>
             </div>
