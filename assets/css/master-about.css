@@ -9909,7 +9909,7 @@ section {
 }
 
 .integration-card:hover i {
-    transform: translateX(5px)
+    /* transform: translateX(5px) */
 }
 
 .integration-card .thumb img {
