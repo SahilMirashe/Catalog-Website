@@ -107,25 +107,32 @@
     .header-area.style-1 .header-area__inner {
       height: 80px !important;
     }
+
     .header-area.sticky .header-area__inner {
       height: 80px !important;
     }
+
     .wc-btn-primary {
       background-color: #6965e0;
       border-color: #6965e0;
     }
+
     .integration-cards-wrapper .nav-link.active {
       background-color: #6965e0;
     }
-    .integration-card{
+
+    .integration-card {
       cursor: default;
     }
-    .integration-card:hover{
+
+    .integration-card:hover {
       border-color: #6965e0;
     }
+
     .hero-area:before {
       background: linear-gradient(180deg, #6965e022 0%, rgba(251, 247, 244, 0) 100%) !important;
     }
+
     .pricing-area:before {
       background: linear-gradient(180deg, #f6f6fe 0%, rgba(251, 247, 244, 0) 100%) !important;
     }
@@ -134,14 +141,57 @@
       margin-top: 6px;
       display: flex;
     }
-    .main-menu ul.dp-menu{
+
+    .main-menu ul.dp-menu {
       border-radius: 34px;
       border: 4px solid #ede6fe;
     }
-    .main-menu ul.dp-menu li a{
+
+    .main-menu ul.dp-menu li a {
       color: #ede6fe;
     }
-    
+  </style>
+
+  <style>
+    .integration-cards {
+      grid-template-columns: unset !important;
+    }
+
+    .integration-card {
+      text-align: left;
+      padding-right: 40%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: calc(100% - 20px) center;
+    }
+
+    .integration-card.left {
+      background-position: calc(20px);
+      text-align: right;
+      padding-right: 35px;
+      padding-left: 40%;
+    }
+
+    .integration-card .content {
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+
+    .integration-card .content:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .integration-card {
+      padding-right: 40%;
+      background-image: none !important;
+      padding: 35px 30px 32px !important;
+      text-align: left !important;
+     
+    }
+
+}
   </style>
 
 </head>
@@ -171,7 +221,8 @@
           </div>
           <ul class="submenu">
             <li><a href="x-bc.html">Home</a></li>
-            <li><a href="x-bc-modules.html">Modules</a></li>  <li><a href="x-bc-features.html">Features</a></li>
+            <li><a href="x-bc-modules.html">Modules</a></li>
+            <li><a href="x-bc-features.html">Features</a></li>
             <li><a href="x-bc-pricing.html">Pricing</a></li>
           </ul>
         </li>
@@ -229,7 +280,8 @@
                 </a>
                 <ul class="dp-menu">
                   <li><a href="x-bc.html">Home</a></li>
-                  <li><a href="x-bc-modules.html">Modules</a></li>  <li><a href="x-bc-features.html">Features</a></li>
+                  <li><a href="x-bc-modules.html">Modules</a></li>
+                  <li><a href="x-bc-features.html">Features</a></li>
                   <li><a href="x-bc-pricing.html">Pricing</a></li>
                 </ul>
               </li>
@@ -271,7 +323,7 @@
             </ul>
           </nav>
         </div>
-       
+
         <div class="header__navicon d-xl-none">
           <button onclick="showCanvas3()" class="open-offcanvas">
             <i class="fa-solid fa-bars"></i></button>
@@ -369,7 +421,7 @@
                       <div class="integration-cards">
                         <div class="has_fade_anim">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card img" style="background-image: url(assets/imgs/x-bc/x1.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -378,28 +430,12 @@
                                   to effortlessly send instant alerts to the entire school, specific classes, or
                                   individual students, all with just a few clicks.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Timely Notifications</h3>
                                 <p class="text">Stay informed with our notification system that acts as friendly digital
                                   reminders, automatically popping up whenever crucial events occur within our system.
                                   Whether it's marking attendance, updating daily diaries, collecting fees, or making
                                   calendar adjustments.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Academic Calendar</h3>
@@ -410,9 +446,10 @@
                             </div>
                           </a>
                         </div>
+
                         <div class="has_fade_anim" data-delay="0.25">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card left" style="background-image: url(assets/imgs/x-bc/x2.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -421,26 +458,10 @@
                                   Table feature, empowering parents with comprehensive insights into their child's
                                   school activities.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Daily Class Updates</h3>
                                 <p class="text">Stay updated on your child's daily classwork details and receive timely
                                   homework notifications from teachers via our Daily Diary feature.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Streamlined Leave Requests</h3>
@@ -451,9 +472,10 @@
                             </div>
                           </a>
                         </div>
+
                         <div class="has_fade_anim">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card" style="background-image: url(assets/imgs/x-bc/x3.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -463,27 +485,11 @@
                                   various resources, from YouTube videos to visual-only materials, tailored for students
                                   in the respective class.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Effortless Attendance Tracking</h3>
                                 <p class="text">Teachers seamlessly record attendance, with automatic notifications sent
                                   to parents, who can also monitor late arrivals, ensuring a transparent and efficient
                                   attendance system.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Library Access Anywhere</h3>
@@ -494,9 +500,10 @@
                             </div>
                           </a>
                         </div>
+
                         <div class="has_fade_anim" data-delay="0.25">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card left" style="background-image: url(assets/imgs/x-bc/x4.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -505,27 +512,11 @@
                                   canteen, and information related to dress and shoe shops—all the essential services
                                   are just a click away for their convenience.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Personalized Mentorship</h3>
                                 <p class="text">Parents can readily find details about the assigned headmistress and
                                   class mentor. If they have questions or need assistance, connecting with the right
                                   mentor for guidance and support is made simple.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Dynamic News Feed</h3>
@@ -537,9 +528,10 @@
                             </div>
                           </a>
                         </div>
+
                         <div class="has_fade_anim">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card" style="background-image: url(assets/imgs/x-bc/x5.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -548,27 +540,12 @@
                                   via bank payment gateways or UPI apps, with options for uploading proof of offline
                                   payments for approval and easy receipt download.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Digital ID Convenience</h3>
                                 <p class="text">Access digital student and parent/guardian information, offering a
                                   hassle-free solution for those moments when physical ID cards are misplaced.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
+
                               <div class="content">
                                 <h3 class="title">Health Status Insights</h3>
                                 <p class="text">Easily track your child's health and examination data, securely managed
@@ -578,9 +555,10 @@
                             </div>
                           </a>
                         </div>
+
                         <div class="has_fade_anim" data-delay="0.25">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card left" style="background-image: url(assets/imgs/x-bc/x6.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -590,27 +568,11 @@
                                   to the departments, and upon resolution, a report is
                                   published to keep the management informed.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Examination Insights</h3>
                                 <p class="text">Within our Examination Module, students and parents can conveniently
                                   access exam marks, download mark sheets, and even view the top 10 performing students
                                   for a specific exam, fostering transparency and academic awareness.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Effortless Support</h3>
@@ -621,15 +583,14 @@
                             </div>
                           </a>
                         </div>
-
                       </div>
                     </div>
                     <div class="tab-pane fade" id="pills-second" role="tabpanel" aria-labelledby="pills-second-tab"
                       tabindex="0">
-                      <div class="integration-cards">
+                      <div class="integration-cards left">
                         <div class="has_fade_anim">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card" style="background-image: url(assets/imgs/x-bc/x7.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -638,27 +599,11 @@
                                   events, holidays, and exam schedules. This empowers them to plan their teaching
                                   strategies and activities more effectively.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Effortless Alerts</h3>
                                 <p class="text">Through the mobile app, both administrators and teachers can seamlessly
                                   send alerts to the entire school, specific classes, or individual students with just a
                                   few clicks, ensuring timely communication and updates.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Automated Notifications</h3>
@@ -672,7 +617,7 @@
                         </div>
                         <div class="has_fade_anim" data-delay="0.25">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card left" style="background-image: url(assets/imgs/x-bc/x8.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -681,27 +626,11 @@
                                   suggestions submitted by students through the application, promoting a collaborative
                                   and responsive learning environment.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Comprehensive Class Register</h3>
                                 <p class="text">The Class Register feature offers teachers a dynamic tool to mark
                                   attendance, assign tasks, record additional details, and more. It caters to the
                                   diverse needs of educators across subjects and classes.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Interactive Daily Diary</h3>
@@ -713,9 +642,10 @@
                             </div>
                           </a>
                         </div>
+
                         <div class="has_fade_anim">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card" style="background-image: url(assets/imgs/x-bc/x9.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -725,27 +655,11 @@
                                   approve, reject, or escalate leave requests to higher authorities when needed,
                                   ensuring a streamlined process.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Engaging News Feed</h3>
                                 <p class="text">Teachers can actively contribute to the school's community by posting
                                   updates about school events, programs, and photos. This feature enables parents to
                                   stay informed and easily share these highlights on their social media networks.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Flexible Online Learning</h3>
@@ -764,7 +678,7 @@
                       <div class="integration-cards">
                         <div class="has_fade_anim">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card" style="background-image: url(assets/imgs/x-bc/x10.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -773,27 +687,11 @@
                                   events, holidays, and exam schedules. This empowers them to plan their teaching
                                   strategies and activities more effectively.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Effortless Alerts</h3>
                                 <p class="text">Through the mobile app, both administrators and teachers can seamlessly
                                   send alerts to the entire school, specific classes, or individual students with just a
                                   few clicks, ensuring timely communication and updates.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Automated Notifications</h3>
@@ -807,7 +705,7 @@
                         </div>
                         <div class="has_fade_anim" data-delay="0.25">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card left" style="background-image: url(assets/imgs/x-bc/x11.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -816,28 +714,12 @@
                                   every employee, allowing them to mark employees as present, absent, or tardy, ensuring
                                   accurate attendance records for teachers and staff.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Employee Leave Administration</h3>
                                 <p class="text">Through the Employee Leave module, the Site Administrator efficiently
                                   manages teacher leaves and their own absences. Teachers can submit leave requests,
                                   which the administrator can approve, reject, or escalate to higher authorities,
                                   ensuring a streamlined leave management process.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Engaging News Feed</h3>
@@ -856,7 +738,7 @@
                       <div class="integration-cards">
                         <div class="has_fade_anim">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card" style="background-image: url(assets/imgs/x-bc/x12.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -865,27 +747,11 @@
                                   events within the Academic Calendar, categorizing them by types such as exams,
                                   holidays, activity days, emergency closures, and more.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Timetable Coordinator</h3>
                                 <p class="text">The Timetable Coordinator, often the site admin, is tasked with
                                   configuring and maintaining the comprehensive timetable for all students, ensuring a
                                   smooth schedule for everyone.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Admissions Administrator</h3>
@@ -898,7 +764,7 @@
                         </div>
                         <div class="has_fade_anim" data-delay="0.25">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card left" style="background-image: url(assets/imgs/x-bc/x13.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -907,27 +773,11 @@
                                   visitors and their respective details, maintaining a comprehensive record of all
                                   individuals entering the premises.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Enquiry Handling</h3>
                                 <p class="text">The Site Administrator is responsible for managing all inquiries related
                                   to admissions and other relevant matters, ensuring a streamlined process for
                                   prospective students and parents.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Alerts and Notifications Configuration</h3>
@@ -939,9 +789,10 @@
                             </div>
                           </a>
                         </div>
+
                         <div class="has_fade_anim">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card" style="background-image: url(assets/imgs/x-bc/x14.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -950,28 +801,12 @@
                                   every employee, allowing them to mark employees as present, absent, or tardy, ensuring
                                   accurate attendance records for teachers and staff.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Employee Leave Administration</h3>
                                 <p class="text">Through the Employee Leave module, the Site Administrator efficiently
                                   manages teacher leaves and their own absences. Teachers can submit leave requests,
                                   which the administrator can approve, reject, or escalate to higher authorities,
                                   ensuring a streamlined leave management process.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Engaging News Feed</h3>
@@ -990,7 +825,7 @@
                       <div class="integration-cards">
                         <div class="has_fade_anim">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card" style="background-image: url(assets/imgs/x-bc/x15.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -999,28 +834,12 @@
                                   to effortlessly send instant alerts to the entire school, specific classes, or
                                   individual students, all with just a few clicks.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Timely Notifications</h3>
                                 <p class="text">Stay informed with our notification system that acts as friendly digital
                                   reminders, automatically popping up whenever crucial events occur within our system.
                                   Whether it's marking attendance, updating daily diaries, collecting fees, or making
                                   calendar adjustments.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Academic Calendar</h3>
@@ -1031,9 +850,10 @@
                             </div>
                           </a>
                         </div>
+
                         <div class="has_fade_anim" data-delay="0.25">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card left" style="background-image: url(assets/imgs/x-bc/x16.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -1045,14 +865,6 @@
                                   items. Furthermore, it includes tracking fees and efficiently managing fines,
                                   contributing to an organized and equitable library management system.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Leave Management</h3>
                                 <p class="text">Employees can apply for and manage their leaves through this module,
@@ -1062,6 +874,7 @@
                             </div>
                           </a>
                         </div>
+
                       </div>
                     </div>
                     <div class="tab-pane fade" id="pills-sixth" role="tabpanel" aria-labelledby="pills-fifth-tab"
@@ -1069,7 +882,7 @@
                       <div class="integration-cards">
                         <div class="has_fade_anim">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card" style="background-image: url(assets/imgs/x-bc/x17.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -1078,28 +891,12 @@
                                   to effortlessly send instant alerts to the entire school, specific classes, or
                                   individual students, all with just a few clicks.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim" data-delay="0.25">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Timely Notifications</h3>
                                 <p class="text">Stay informed with our notification system that acts as friendly digital
                                   reminders, automatically popping up whenever crucial events occur within our system.
                                   Whether it's marking attendance, updating daily diaries, collecting fees, or making
                                   calendar adjustments.</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
                               </div>
                               <div class="content">
                                 <h3 class="title">Academic Calendar</h3>
@@ -1110,9 +907,10 @@
                             </div>
                           </a>
                         </div>
+
                         <div class="has_fade_anim" data-delay="0.25">
                           <a href="javascript:void(0)">
-                            <div class="integration-card">
+                            <div class="integration-card left" style="background-image: url(assets/imgs/x-bc/x18.png);">
                               <div class="thumb">
                               </div>
                               <div class="content">
@@ -1124,14 +922,6 @@
                                   sharing of these financial documents, ensuring transparency and methodical financial
                                   oversight within the institution.</p>
                               </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="has_fade_anim">
-                          <a href="javascript:void(0)">
-                            <div class="integration-card">
-                              <div class="thumb">
-                              </div>
                               <div class="content">
                                 <h3 class="title">Leave Management</h3>
                                 <p class="text">Employees can apply for and manage their leaves through this module,
@@ -1141,6 +931,7 @@
                             </div>
                           </a>
                         </div>
+
                       </div>
                     </div>
                   </div>
@@ -1153,7 +944,7 @@
           <section class="faq-area section-spacing">
             <div class="container">
               <div class="faq-area-inner">
-              
+
                 <div class="section-content">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
